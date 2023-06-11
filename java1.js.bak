@@ -1,0 +1,87 @@
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+
+/*form*/
+function validateForm() {
+      var name = document.forms["myForm"]["name"].value;
+      var email = document.forms["myForm"]["email"].value;
+      var password = document.forms["myForm"]["password"].value;
+
+      if (name === "") {
+        alert("Please enter your name.");
+        return false;
+      }
+
+      if (email === "") {
+        alert("Please enter your email address.");
+        return false;
+      }
+	  if (password === "") {
+        alert("Please enter a password.");
+        return false;
+      }
+
+      // Add additional validation logic here if needed
+
+      return true;
+    }
+	
+/*image slider*/
+const gallerycontainer = Document.querySelector('.gallery-container');
+const gallerycontrolscontainer = Document.querySelector('gallery-controls');
+const gallerycontrols = ['previous','next'];
+const galleryitems = Document.querySelectorAll('.gallery-item');
+
+class Carousel{
+	constructor(container,items,controls){
+		this.carousecontainer = container;
+		this.carousecontainer = control;
+		this.carousecontainer = [...items];
+	}
+	updategallery(){
+		this.carouselarray.forEach(e1 =>{
+			e1.classList.remove('gallery-item-1');
+			e1.classList.remove('gallery-item-2');
+			e1.classList.remove('gallery-item-3');
+			e1.classList.remove('gallery-item-4');
+			e1.classList.remove('gallery-item-5');
+		});
+	}
+	
+
+this.carouselarray.slice(0,5).foreach((e1,i)=>{
+	e1.classList.add('gallery-item-$(i+1)');
+});
+}
+setcurrentstate(direction){
+	if(direction.className == 'gallery-controls-previous'){
+		this.carouselarray.unshift(this.carouselarray.pop));
+	}else{
+		this.carouselarray.push(this.carouselarray.shift());
+	}
+	this.updategallery();
+}
+setcontrols(){
+	this.carousecontrols.forEach(control=>{
+		gallerycontrolcontainer.appendChild(Document.createElement("button"))cla
+		Document.querySelector('gallery-controls-${control}').innerText= control
+	});
+}
+usecontrols(){
+	const triggers = [..gallerycontrolcontainer.childNodes];
+	triggers.forEach(control=>{
+		control.addEventListener('click',e =>{
+			e.preventDefault();
+			this.setcurrentstate(control);
+		});
+	});
+}
+}
