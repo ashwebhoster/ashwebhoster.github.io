@@ -32,7 +32,7 @@ Hello! This is the repository for my personal portfolio website where I showcase
 
 1.Open index.html in a web browser.
 
-## Contributions
+ Contributions
 This is a personal project and not actively looking for contributors, feedback, suggestions, and bug reports are welcome.
 
 Contact
