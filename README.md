@@ -20,6 +20,7 @@ Hello! This is the repository for my personal portfolio website where I showcase
 - HTML5
 - CSS
 - JavaScript
+- php
 - [Bootstrap 5](https://getbootstrap.com/)
 
 ## Local Setup
